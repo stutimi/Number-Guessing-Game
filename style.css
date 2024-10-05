@@ -1,0 +1,19 @@
+body {
+    background-color: #111827; 
+    color: #fff;
+  }
+  
+  .win {
+    background-color: #1E40AF; 
+    color: white;
+  }
+  
+  .lose {
+    background-color: #374151; 
+    color: white;
+  }
+  
+  .button-sound {
+    display: none; 
+  }
+  
