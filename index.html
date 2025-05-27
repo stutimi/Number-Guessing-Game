@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="flex justify-center items-center h-screen bg-black">
+<body class="bg-cover bg-center bg-no-repeat bg-fixed" style="background-image: url('https://i.ibb.co/wZ6wmJRs/Screenshot-2025-05-07-224558.png')">
 
-  <div class="text-center w-full max-w-md p-5 rounded-lg shadow-lg bg-blue-900">
-    <h1 class="text-4xl font-bold mb-4 text-blue-300">Number Guessing Game</h1>
-    <p class="mb-4 text-blue-200">Guess a number between <span id="min">1</span> and <span id="max">100</span></p>
+  <div class="glass-container text-center w-full max-w-md p-6 mx-auto mt-10 rounded-2xl shadow-xl text-white">
+    <h1 class="text-4xl font-bold mb-4 text-blue-200">🎯 Number Guessing Game</h1>
+    <p class="mb-4 text-blue-100">Guess a number between <span id="min">1</span> and <span id="max">100</span></p>
 
-    <input type="number" id="guessInput" class="w-full p-2 text-black mb-4" placeholder="Enter your guess" />
-    <button id="guessBtn" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Submit Guess</button>
+    <input type="number" id="guessInput" class="w-full p-2 rounded text-black mb-4" placeholder="Enter your guess" />
+    <button id="guessBtn" class="w-full bg-blue-600 hover:bg-blue-700 transition-all duration-200 text-white p-2 rounded">Submit Guess</button>
 
-    <div id="message" class="text-xl font-bold my-4"></div>
-    <div id="attempts" class="text-md font-semibold mb-4 text-blue-100">Attempts: 0</div>
+    <div id="message" class="text-xl font-semibold my-4"></div>
+    <div id="attempts" class="text-md font-medium mb-4 text-blue-100">Attempts: 0</div>
 
-    <button id="restartBtn" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 hidden">Restart Game</button>
+    <button id="restartBtn" class="w-full bg-green-600 hover:bg-green-700 transition-all duration-200 text-white p-2 rounded hidden">Restart Game</button>
 
-    <audio id="winSound" class="button-sound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+    <audio id="winSound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
   </div>
 
   <script src="script.js"></script>
-
 </body>
 </html>
+
